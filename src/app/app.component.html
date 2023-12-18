@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    {{ title }}!
+  </h1>
+</div>
+<div>
+  <form [formGroup]="form">
+    <label>Entrer le numéro SIREN/SIRET : </label>
+    <input matInput name="sirenNumber" formControlName="sirenNumber">
+    <div>
+      <span class="warning" *ngIf="form.get('sirenNumber')?.errors && form.get('sirenNumber').value.length >8">
+        Veuillez entrer un SIREN valide !
+      </span>
+      <div *ngIf="!form.get('sirenNumber').errors">
+        <span class="valide">Le SIREN {{ sirenWithoutControlNumber }} est validé !</span>
+      </div>
+    </div>
+  </form>
+</div>
