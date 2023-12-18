@@ -1,5 +1,6 @@
-# SirenValidity permet de valider et de calculer un SIREN passé en string
+
 # SirenValidity
+ SirenValidity validates and calculates a SIREN passed as a string. 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.0.
 
 ## Development server
